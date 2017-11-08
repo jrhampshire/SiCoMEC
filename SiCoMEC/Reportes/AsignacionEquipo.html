@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Asignaci&oacute;n de Equipo de C&oacute;mputo</title>
+   <!-- <link rel="stylesheet" href= "\\SRVPROMOEDO-5\Compartido\SiCoMEC\Archivos\StyleSheet1.css" />-->
+     <style type="text/css">
+         body {
+    background-color:white;
+    font-family: Calibri;
+    font-size: 12px;
+    width:900px;
+    height: 498px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#DatosGenerales, #DescripcionEquipo, #CaractEquipo, #Observaciones, #Firmas{
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height: 7px;
+    margin: 5px;
+    width: auto;
+}
+#Logo {
+    height: 150px;
+    text-align: left;  
+    padding:10px;  
+}
+
+#imglogo, #TitulodeReporte {
+    display: inline-block;
+    height: 123px;
+}
+
+#imglogo {
+    margin: 5px 20px 5px 0px;       
+}
+
+#TitulodeReporte {
+    width: 60%;
+    vertical-align:middle;
+}
+
+h1 {
+    font-family:Arial;
+    font-style:normal;
+    font-size:x-large;
+    text-align:center;            
+}
+
+#Titulo1, #Titulo2 {
+    font-family:Arial;
+    font-style:normal;
+    font-size:larger;
+    font-weight:700;
+}
+
+#Subtitulo1, #Subtitulo2, #Subtitulo3, #Subtitulo4 {
+    font-family:Arial;
+    font-style:normal;
+    font-size: small;
+    font-weight: 300;
+}
+
+#DatosGenerales, #DescripcionEquipo, #CaractEquipo{
+    padding:5px;
+}
+
+#DesEqDer, #DesEqIzq {
+    display:inline-block;
+    width:45%;
+}
+
+#Hardware1, #Software1, #Hardware, #Software {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+}
+
+#Hardware1, #Software1 {
+    text-align:left;
+    width: auto;
+}
+
+#Hardware {
+    height: auto;
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height:2px;
+    margin-bottom:10px;
+    padding:5px;
+    text-align:left;
+    width:35%;
+}
+
+#Software {
+    height:auto;
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height: 8px;
+    margin-bottom:10px;
+    padding:5px;
+    text-align:left;
+    width:55%;
+    
+}
+
+#tabla-Soft {    
+    height:auto;
+    border: 1px solid black;
+    border-spacing: 5px;
+    padding:5px;
+    width:400px;
+    text-align: center;
+}
+
+#Observaciones {
+    text-align:center;
+}
+
+#Firmas {
+    width:auto;
+    align-content:center;
+    padding: 10px;
+}
+
+#AsignaEquipo, #AutorizaAsignacion, #ResponsableEquipo {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    display:inline-block;
+    line-height:2px;
+    text-align:center;
+    height: 130px;
+    width:32.5%;  
+}
+
+#NyFT1, #NyFT2, #NyFT3 {
+    vertical-align:top;
+    height:50%;
+    
+}
+
+#NyF1, #NyF2, #NyF3 {
+    vertical-align:bottom;
+    height:auto;
+}
+     </style>
+</head>
+<body>
+    <header id="Logo">
+        <section id="imglogo">
+            <img src="file://SRVPROMOEDO-5/Compartido/logo_slp_promotora2.png" title="Logo de la Promotora del Estado" style="width: 260px; height: 130px" />
+        </section>
+        <section id="TitulodeReporte">
+            <h1>Asignaci&oacute;n de Equipo de C&oacute;mputo</h1>
+        </section>
+    </header>
+    <section id="DatosGenerales">
+        <div>
+            <h3>Datos Generales:</h3><br />
+            <p>Nombre:&nbsp;&nbsp;$Nombre$</p>
+            <p>&Aacute;rea:&nbsp;&nbsp;$Area$</p>
+            <p>Puesto:&nbsp;&nbsp;$Puesto$</p>
+            <p>Fecha:&nbsp;&nbsp;$Fecha$</p>
+        </div> 
+    </section>
+    <section id="DescripcionEquipo">
+        <div>
+            <h3>Descripci&oacute;n del Equipo:</h3>
+            <section id="DesEqIzq">
+                <p>Inventario:&nbsp;&nbsp;$Inventario$</p> 
+                <p>Marca:&nbsp;&nbsp;$Marca$</p>
+                <p>Modelo:&nbsp;&nbsp;$Modelo$</p>
+                <p>Color:&nbsp;&nbsp;$Color$</p>
+            </section>
+            <section id="DesEqDer">
+                <p>No. Serie del equipo:&nbsp;&nbsp;$SerieE$</p>
+                <p>No. Serie de la pila:&nbsp;&nbsp;$SerieP$</p>
+                <p>No. Serie del cargador:&nbsp;&nbsp;$SerieC$</p>
+                <p>Condiciones generales del equipo:&nbsp;&nbsp;$CondicionesEquipo$</p>
+            </section>
+        </div>                    
+    </section>
+    <section id="CaractEquipo">
+        <div>
+            <h3>Caracter&iacute;sticas del equipo</h3>
+            <section id="Hardware">
+                <h3>Hardware:</h3>
+                <section id="Hardware1">
+                    <p>Procesador:&nbsp;&nbsp;$Procesador$</p>
+                    <p>Disco duro:&nbsp;&nbsp;$HD$</p>
+                    <p>Memoria Ram:&nbsp;&nbsp;$Ram$</p>
+                    <p>Unidad &oacute;ptica:&nbsp;&nbsp;$CD$</p>
+                </section>                    
+            </section>
+            <section id="Software">
+                <h3>Software:</h3>
+                <section id="Software1">
+                    <table class="datatable">
+                    <tr id="tabla-Soft">
+                        <td>$Soft$</td>
+                    </tr>                    
+                </table>
+                </section>
+                
+            </section>
+        </div>
+    </section>
+    <section id="Observaciones">
+        <div>
+            <h3>Observaciones</h3><br />
+            <p>$Observaciones$</p>
+        </div>
+    </section>
+    <section id="Firmas">
+        <section id="AsignaEquipo">
+            <section id="NyFT1">
+                <div>
+                    <h3>Asigna el Equipo</h3>
+                </div>
+            </section>
+            <section id="NyF1">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+        <section id="AutorizaAsignacion">
+            <section id="NyFT2">
+                <div>
+                    <h3>Autoriza la Asignaci&oacute;n</h3>
+                </div>
+            </section>
+            <section id="NyF2">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+        <section id="ResponsableEquipo">
+            <section id="NyFT3">
+                <div>
+                    <h3>Responsable del Equipo</h3>
+                </div>
+            </section>
+            <section id="NyF3">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

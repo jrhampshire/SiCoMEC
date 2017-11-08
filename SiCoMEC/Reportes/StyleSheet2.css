@@ -1,0 +1,90 @@
+﻿body {
+    background-color:white;
+    font-family: Calibri;
+    font-size: 12px;
+    width:900px;
+    height: 498px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#Logo {
+    height: 150px;
+    text-align: left;  
+    padding:10px;  
+}
+
+#imglogo, #TitulodeReporte {
+    display: inline-block;
+    height: 123px;
+}
+
+#imglogo {
+    margin: 5px 20px 5px 0px;       
+}
+
+#TitulodeReporte {
+    width: 60%;
+    font-size:x-large;
+    vertical-align:middle;
+    text-align:center;
+}
+#DatosGenerales {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+        margin:10px;
+    width:880px;
+}
+#DGDer, #DGIzq {
+    display:inline-block;
+    vertical-align:top;
+    width:45%;
+}
+#Servicio {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+    margin:10px;
+    width:880px;
+}
+#Falla, #Diagnostico {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+    margin:10px;
+    width:auto;
+}
+#Firmas {
+    width:auto;
+    align-content:center;
+    padding: 10px;
+}
+
+#AsignaEquipo, #AutorizaAsignacion, #ResponsableEquipo {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    display:inline-block;
+    line-height:2px;
+    text-align:center;
+    height: 130px;
+    width:32.5%;  
+}
+
+#NyFT1, #NyFT2, #NyFT3 {
+    vertical-align:top;
+    height:50%;
+    
+}
+
+#NyF1, #NyF2, #NyF3 {
+    vertical-align:bottom;
+    height:auto;
+}

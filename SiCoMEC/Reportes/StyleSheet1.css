@@ -1,0 +1,139 @@
+﻿body {
+    background-color:white;
+    font-family: Calibri;
+    font-size: 12px;
+    width:900px;
+    height: 498px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#DatosGenerales, #DescripcionEquipo, #CaractEquipo, #Observaciones, #Firmas{
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height: 7px;
+    margin: 5px;
+    width: auto;
+}
+#Logo {
+    height: 150px;
+    text-align: left;  
+    padding:10px;  
+}
+
+#imglogo, #TitulodeReporte {
+    display: inline-block;
+    height: 123px;
+}
+
+#imglogo {
+    margin: 5px 20px 5px 0px;       
+}
+
+#TitulodeReporte {
+    width: 60%;
+    vertical-align:middle;
+}
+
+h1 {
+    font-family:Arial;
+    font-style:normal;
+    font-size:x-large;
+    text-align:center;            
+}
+
+#Titulo1, #Titulo2 {
+    font-family:Arial;
+    font-style:normal;
+    font-size:larger;
+    font-weight:700;
+}
+
+#Subtitulo1, #Subtitulo2, #Subtitulo3, #Subtitulo4 {
+    font-family:Arial;
+    font-style:normal;
+    font-size: small;
+    font-weight: 300;
+}
+
+#DatosGenerales, #DescripcionEquipo, #CaractEquipo{
+    padding:5px;
+}
+
+#DesEqDer, #DesEqIzq {
+    display:inline-block;
+    width:45%;
+}
+
+#Hardware1, #Hardware2, #Hardware, #Software {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+}
+
+#Hardware1, #Hardware2 {
+    text-align:left;
+    width: 40%;
+}
+
+#Hardware {
+    height: auto;
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height:2px;
+    margin-bottom:10px;
+    padding:5px;
+    text-align:center;
+    width:35%;
+}
+
+#Software {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    line-height:2px;
+    margin-bottom:10px;
+    text-align:center;
+    width:55%;
+    height:auto;
+}
+
+#tabla-Soft {    
+    border: 1px solid black;
+    border-spacing: 5px;
+    width:400px;
+}
+
+#Observaciones {
+    text-align:center;
+}
+
+#Firmas {
+    width:auto;
+    align-content:center;
+    padding: 10px;
+}
+
+#AsignaEquipo, #AutorizaAsignacion, #ResponsableEquipo {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    display:inline-block;
+    line-height:2px;
+    text-align:center;
+    height: 130px;
+    width:32.5%;  
+}
+
+#NyFT1, #NyFT2, #NyFT3 {
+    vertical-align:top;
+    height:50%;
+    
+}
+
+#NyF1, #NyF2, #NyF3 {
+    vertical-align:bottom;
+    height:auto;
+}

@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{483D7AA7-3E1B-4997-99CF-36ED6235BE7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SiCoMEC.My.MyApplication</StartupObject>
+    <RootNamespace>SiCoMEC</RootNamespace>
+    <AssemblyName>SiCoMEC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SiCoMEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SiCoMEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\App-package-utilities.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formas\AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Areas.Designer.vb">
+      <DependentUpon>Areas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Areas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Edita_Empleado.Designer.vb">
+      <DependentUpon>Edita_Empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Edita_Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Edita_Equipo.Designer.vb">
+      <DependentUpon>Edita_Equipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Edita_Equipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Edita_Mantenimiento.Designer.vb">
+      <DependentUpon>Edita_Mantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Edita_Mantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Listado_AsignacionEquipos.Designer.vb">
+      <DependentUpon>Listado_AsignacionEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Listado_AsignacionEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Listado_Empleados.Designer.vb">
+      <DependentUpon>Listado_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Listado_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Listado_Equipos.Designer.vb">
+      <DependentUpon>Listado_Equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Listado_Equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Listado_Mantenimientos.Designer.vb">
+      <DependentUpon>Listado_Mantenimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Listado_Mantenimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Nueva_Asignacion_Equipo.Designer.vb">
+      <DependentUpon>Nueva_Asignacion_Equipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Nueva_Asignacion_Equipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\NuevoEmpleado.Designer.vb">
+      <DependentUpon>NuevoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\NuevoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Nuevo_Equipo.Designer.vb">
+      <DependentUpon>Nuevo_Equipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Nuevo_Equipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Nuevo_Mantenimiento.Designer.vb">
+      <DependentUpon>Nuevo_Mantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Nuevo_Mantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Puestos.Designer.vb">
+      <DependentUpon>Puestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Puestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Software.Designer.vb">
+      <DependentUpon>Software.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Software.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Tipos_Solicitud.Designer.vb">
+      <DependentUpon>Tipos_Solicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Tipos_Solicitud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos y Clases\Class_Equipo.vb" />
+    <Compile Include="Modulos y Clases\Class_Mantenimiento.vb" />
+    <Compile Include="Modulos y Clases\Module1.vb" />
+    <Compile Include="Modulos y Clases\VariablesGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formas\AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Areas.resx">
+      <DependentUpon>Areas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Edita_Empleado.resx">
+      <DependentUpon>Edita_Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Edita_Equipo.resx">
+      <DependentUpon>Edita_Equipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Edita_Mantenimiento.resx">
+      <DependentUpon>Edita_Mantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Listado_AsignacionEquipos.resx">
+      <DependentUpon>Listado_AsignacionEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Listado_Empleados.resx">
+      <DependentUpon>Listado_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Listado_Equipos.resx">
+      <DependentUpon>Listado_Equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Listado_Mantenimientos.resx">
+      <DependentUpon>Listado_Mantenimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Nueva_Asignacion_Equipo.resx">
+      <DependentUpon>Nueva_Asignacion_Equipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\NuevoEmpleado.resx">
+      <DependentUpon>NuevoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Nuevo_Equipo.resx">
+      <DependentUpon>Nuevo_Equipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Nuevo_Mantenimiento.resx">
+      <DependentUpon>Nuevo_Mantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Puestos.resx">
+      <DependentUpon>Puestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Software.resx">
+      <DependentUpon>Software.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Tipos_Solicitud.resx">
+      <DependentUpon>Tipos_Solicitud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\App-package-utilities.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentation_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Document_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder with Contents.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel 32 x 32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\AsignacionEquipo.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\ServicioMtto.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\StyleSheet1.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\StyleSheet2.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\wkhtmltopdf.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\wkhtmltox.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

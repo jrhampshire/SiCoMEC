@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Servicio de Mantenimiento</title>
+    <!--<link rel="stylesheet" href="StyleSheet2.css" />-->
+    <style type="text/css">
+
+        body {
+    background-color:white;
+    font-family: Calibri;
+    font-size: 12px;
+    width:900px;
+    height: 498px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#Logo {
+    height: 150px;
+    text-align: left;  
+    padding:10px;  
+}
+
+#imglogo, #TitulodeReporte {
+    display: inline-block;
+    height: 123px;
+}
+
+#imglogo {
+    margin: 5px 20px 5px 0px;       
+}
+
+#TitulodeReporte {
+    width: 60%;
+    font-size:x-large;
+    vertical-align:middle;
+    text-align:center;
+}
+#DatosGenerales {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+        margin:10px;
+    width:880px;
+}
+#DGDer, #DGIzq {
+    display:inline-block;
+    vertical-align:top;
+    width:45%;
+}
+#Servicio {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+    margin:10px;
+    width:880px;
+}
+#Falla, #Diagnostico {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    height: auto;
+    line-height:2px;
+    margin:10px;
+    width:auto;
+}
+#Firmas {
+    width:auto;
+    align-content:center;
+    padding: 10px;
+}
+
+#AsignaEquipo, #AutorizaAsignacion, #ResponsableEquipo {
+    border-width:2px;
+    border-color:black;
+    border-style: solid;
+    display:inline-block;
+    line-height:2px;
+    text-align:center;
+    height: 130px;
+    width:32.5%;  
+}
+
+#NyFT1, #NyFT2, #NyFT3 {
+    vertical-align:top;
+    height:50%;
+    
+}
+
+#NyF1, #NyF2, #NyF3 {
+    vertical-align:bottom;
+    height:auto;
+}
+#Folio {
+    text-align: right;
+    font-size: medium;
+    color: #FF3300;
+}
+    </style>
+
+</head>
+<body>
+    <header id="Logo">
+        <section id="imglogo">
+            <img src="file://SRVPROMOEDO-5/Compartido/logo_slp_promotora2.png" title="Logo de la Promotora del Estado" style="width: 260px; height: 130px" />
+        </section>
+        <section id="TitulodeReporte">
+            <section id="Folio">
+                <p><strong>folio:&nbsp;</strong>&nbsp;<strong>$folio$</strong></p>
+            </section>
+            <section id="Titulo">
+                <h1>Servicio de Mantenimiento</h1>
+            </section>
+        </section>
+    </header>
+    <section id="DatosGenerales">
+        <div>
+            <h3>Datos Generales:</h3><br />
+            <section id="DGIzq">
+                <p>Nombre:&nbsp;&nbsp;$Nombre$</p>
+                <p>&Aacute;rea;&nbsp;&nbsp;$Area$</p>
+                <p>Fecha:&nbsp;&nbsp;$Fecha$</p>
+            </section>
+            <section id="DGDer">
+                <p>Puesto:&nbsp;&nbsp;$Puesto$</p>
+                <p>No. Inventario del equipo&nbsp;&nbsp;$Inventario$</p>
+            </section>            
+        </div> 
+    </section>
+    <section id="Servicio">
+        <div>
+            <h3>Servicio</h3>
+            <p>Tipo de Mantenimiento:&nbsp;&nbsp;$TipoMtto$</p>
+        </div>
+    </section>
+    <section id ="Detalles">
+        <section id="Falla">
+            <div>
+                <h3>Descripci&oacute;n de la falla o solicitud de asesor&iacute;a</h3>
+                <p>$Falla$</p>
+            </div>
+        </section>
+        <section id="Diagnostico">
+            <div>
+                <h3>Diagn&oacute;stico</h3>
+                <p>$Diagnostico$</p>
+            </div>
+        </section>
+    </section>
+        <section id="Firmas">
+        <section id="AsignaEquipo">
+            <section id="NyFT1">
+                <div>
+                    <h3>Solicit&oacute;</h3>
+                </div>
+            </section>
+            <section id="NyF1">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+        <section id="AutorizaAsignacion">
+            <section id="NyFT2">
+                <div>
+                    <h3>Autoriz&oacute;</h3>
+                </div>
+            </section>
+            <section id="NyF2">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+        <section id="ResponsableEquipo">
+            <section id="NyFT3">
+                <div>
+                    <h3>Area de Sistemas</h3>
+                </div>
+            </section>
+            <section id="NyF3">
+                <div>
+                    <h3>___________________________</h3>
+                    <h3>Nombre y Firma</h3>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
